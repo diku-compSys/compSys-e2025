@@ -2,7 +2,7 @@
 
 | Week | Date   | Topic | Lecture  | Topic                                                                         | Material |
 | ---- | ----   | ----- | -------  | ------                                                                        | -------- |
-| 36   | 01&nbsp;Sep | Intro | David    | Course introduction                                                           | COD 1.1-1.4,1.6-1.8 |
+| 36   | 01 Sep | Intro | David    | Course introduction                                                           | COD 1.1-1.4,1.6-1.8 |
 |      |        | Basic | David    | Computers and C programming                                                   | JG 1-3 |
 |      | 03 Sep | Basic | David    | Assembly code and machine model                                               | COD 2.1-2.4,2.6-2.7, JG 4 |
 <!-- |      | 06 Sep |       | TAs      | Master Class on Tools for the Working Programmer, 10-12 in Biocenter 4-0-24                     |  | -->
@@ -32,7 +32,7 @@
 |      |        |       |          | Hand-in A3  -- Simple client, performance, buffering, Threaded Server/application                          |          |
 | 48   | 24 Nov | Arc   | Finn     | RISCV Maskinsprog                                                             | as above. Also get some familiarity/overview of ch 1,2 and 13 of [RISCV](https://github.com/riscv/riscv-isa-manual/releases/download/20240411/unpriv-isa-asciidoc.pdf) |
 |      | 26 Nov | Arc   | Finn     | En simpel maskine                                                             | COD 4.1 - 4.4 |
-| 49   | 01 Dec | Arc   | Finn     | A5 handout. Digital logik                                                     | COD A.1 - A.3, A.5, A7 - A.9, [NandGame](https://nandgame.com/)
+| 49   | 01 Dec | Arc   | Finn     | Digital logik                                                                 | COD A.1 - A.3, A.5, A7 - A.9, [NandGame](https://nandgame.com/)
 |      | 03 Dec | Arc   | Finn     | Into til Mikroarkitektur: Pipelining og ydeevne                               | COD 4.6 - 4.9 |
 | 50   | 08 Dec | Arc   | Finn     | Avanceret Mikroarkitektur I                                                   | COD 4.11 + [note](https://github.com/diku-compSys/compSys-e2023-pub/blob/main/resources/Afviklingsplot/plot.md) |
 |      | 10 Dec | Arc   | Finn     | Avanceret Mikroarkitektur II                                                  | [note](https://github.com/diku-compSys/compSys-e2023-pub/blob/main/resources/Afviklingsplot/plot.md) |

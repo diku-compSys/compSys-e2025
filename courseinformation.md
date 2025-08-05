@@ -53,18 +53,18 @@ The general outline of CompSys will be the following:
 Be aware that CompSys is a semester course, which means that we will be teaching (including having normal exercise and assignments) throughout the exam period (weeks 44 and 45) of Block 1.
 
 ### Exam
-The exam is a written 4-hour open-book exam and will be held on Wednesday Jan 22. Course syllabus is all reading material, including the assignments.
+The exam is a written 4-hour open-book exam and will be held on Wednesday Jan 21st. Course syllabus is all reading material, including the assignments.
 We will later publish example sets based on the previous exam iteration and further details on the exam procedure. It will be possible to get limited feedback on the exam performance afterwards.
 
 ### Exercises and Cafées
-The course will have both class exercises and open café sessions. The class exercises fill focus on smaller exercises that will make you better understand material from the lectures, prepare you for the details of the assignments, or prepare you for the exam.
+The course will have both class exercises and open café sessions. The class exercises will fill focus on smaller exercises that will provide practice in using the material presented in the lectures and videos. They are perhaps the main learning point for the course as you are expected to be able to practice and apply the theories and principles explained through the course. 
 
 The café sessions will, on the other hand, mainly be your possibility to get help with the assignments. However, it will also be possible to ask about exercises and other material. Also teachers will (mainly on Wednesdays) also be presents, so you can ask anything in an informal setting.
 
 ### Assignments and qualification for the exam
 To qualify for the exam, a minimum number of points must be gained through the assignments. On purpose, to achieve this limit requires a basic understanding of the programming tasks of the assignments (including presentation of this though test and a report), but not a full understanding.
 
-It is also important to note, that the main purpose of the assignment is _not_ to prepare you for the exam; that is what the exercise classes are for. The assignments will focus on larger implementations and the practical learning goals of the course. Some questions in the exam will relate to the assignments, but qualifying of the exam (and even fully solving the assignments) will not be enough preparation to pass the exam. You need to make the exercises and the best way is to come to the exercise classes.
+It is also important to note, that the main purpose of the assignment is _not_ to prepare you for the exam; that is what the theory parts of the exercise classes are for. The assignments will focus on larger implementations and the practical learning goals of the course. Some questions in the exam will relate to the assignments, but qualifying of the exam (and even fully solving the assignments) will not be enough preparation to pass the exam. You need to make the exercises and the best way is to come to the exercise classes.
 
 ## Manning
 
@@ -87,20 +87,15 @@ TAs:
 ## Lectures
 
 ### Block 1
- * Mondays at 13:15-15:00 in DIKU, Store UP1
- * Wednesdays at 10:15-12:00 in DIKU, Store UP1
+ * Mondays at 15:15-17:00 in DIKU, Store UP1
+ * Wednesdays at 15:15-17:00 in DIKU, Store UP1
 
-### Block 2; weeks 47+48
- * Mondays at 13:15-15:00 in HCØ Aud5
- * Wednesdays at 10:15-12:00 in NBB 2.0.G.064/070
-
-### Block 2; weeks 49 - 51 + 2
- * Mondays at 13:15-15:00 in DIKU, Store UP1
- * Wednesdays at 10:15-12:00 in DIKU, Store UP1
+### Block 2
+ * TBD
 
 
 ## Exercise Classes
-Exercise clases will mainly have a focus on smaller exercises that prepare you for the tasks in the assignments and the exam. 
+Exercise clases will introduce many of the smaller concepts and techniques we will be exploring in this course. They are mostly smaller progamming and theory tasks that prepare you for the tasks in the assignments and the exam. 
 
  * Mondays 15:15-17:00
  * Wednesdays 13:15-15:00
