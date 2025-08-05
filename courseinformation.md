@@ -83,24 +83,39 @@ TAs:
   * Philip Shun Buenaventura Jensen
   * Tobias Andersen 
 
+## Teaching
+Teaching in this course will be on a weekly basis. E.g. each week we will have a unified topic that will be introduced and examined. These subjects will be taught through a combination of out of class videos to watch, exercises, review sessions and lectures.
 
-## Lectures
+### Recordings
+Much of the theoretical material will be first introduced via video recordings. These will be released the previous week so that you may view them in your own time before the start of the week. You will not be expected to know all presented material inside and out before attending any exercises or lectures, but will be expected to have at least viewed the material and identified any questions you still have. Small review quizzes will also be provided along with the recordings for you to test that you've obtained the expected learning from the videos. Note that these quizzes are just for revision and feedback and so do not affect your assignments or final grades in any way.
 
-### Block 1
- * Mondays at 15:15-17:00 in DIKU, Store UP1
+### Review Sessions
+Every Monday a session will be held to review the weeks video material. This is an opportunity to ask questions directly to the teachers about the weeks material. This will primarily be a repeat of the material presented in the videos so if you are already familiar and confident with the video material and exercise topics attendance at the review sessions should be viewed as optional.
+
+#### Block 1
+  * Monday at 15:15-17:00 in DIKU, Store UP1
+
+#### Block 2
+ * TBD
+
+### Advanced Lectures
+Every Wednesday a more traditional lecture will be held to introduce further topics not covered in the videos. This will be material that is more complex and would benefit from an in-person explanation. Recordings of such material should not be assumed to be available and so attendance is expected by all at this lecture.
+
+#### Block 1
+
  * Wednesdays at 15:15-17:00 in DIKU, Store UP1
 
-### Block 2
+#### Block 2
  * TBD
 
 
 ## Exercise Classes
-Exercise clases will introduce many of the smaller concepts and techniques we will be exploring in this course. They are mostly smaller progamming and theory tasks that prepare you for the tasks in the assignments and the exam. 
+Exercise classes will introduce many of the smaller concepts and techniques we will be exploring in this course. They are mostly smaller programming and theory tasks that prepare you for the tasks in the assignments and the exam. 
 
- * Mondays 15:15-17:00
+ * Mondays 13:15-15:00
  * Wednesdays 13:15-15:00
 
- Please disregard the location stated at skema.ku.dk or in the myUCPH app. Please refer to the plan below:
+Please disregard the location stated at skema.ku.dk or in the myUCPH app. Please refer to the plan below:
 
 <!--See [skema.ku.dk](https://skema.ku.dk/tt/tt.asp?SDB=KU2425&language=DK&folder=Reporting&style=textspreadsheet&type=module&idtype=id&id=125310&weeks=6-16&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+textspreadsheet) for Block 1 room details.
 
