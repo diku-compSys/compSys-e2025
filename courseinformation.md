@@ -110,7 +110,7 @@ Every Wednesday a more traditional lecture will be held to introduce further top
 
 
 ## Exercise Classes
-Exercise classes will introduce many of the smaller concepts and techniques we will be exploring in this course. They are mostly smaller programming and theory tasks that prepare you for the tasks in the assignments and the exam. 
+Exercise classes will introduce many of the smaller concepts and techniques we will be exploring in this course. They are mostly smaller programming and theory tasks that prepare you for the tasks in the assignments and the exam. Note that you will be expected to have viewed the relevant video recordings before attending the exercise classes. 
 
  * Mondays 13:15-15:00
  * Wednesdays 13:15-15:00
@@ -121,7 +121,7 @@ Please disregard the location stated at skema.ku.dk or in the myUCPH app. Please
 
  -->
 #### Block 1
-  * Class 1: Benjamin
+<!--  * Class 1: Benjamin
     * Monday: NBB 2.3.I.164
     * Wednesday: NBB 2.3.I.164
   * Class 2: Christian and Riasat
@@ -142,7 +142,6 @@ Please disregard the location stated at skema.ku.dk or in the myUCPH app. Please
   * Class 7: Tobias NH
     * Monday: NBB 2.0.G.064/070
     * Wednesday: NBB 2.3.H.142
-
 
 Make sure that you and your study group joins a class in the Absalon Course Room -> People -> Class
 
@@ -170,6 +169,7 @@ Make sure that you and your study group joins a class in the Absalon Course Room
  * Class 7: Tobias NH
    * Monday: NBB 2.3.I.164
    * Wednesday: NBB 2.3.I.164
+-->
 
 ### Room details
 Map of Nørre Campus:
@@ -181,56 +181,24 @@ https://nexs.ku.dk/kontakt/findvej/kort_norre-campus/
  * HCØ, C103 is first floor in building 2
  * NEXS Aud Syd + Nord is at Nørre Alle 51 (almost at the Royal Library)
 
+## Cafés 
+Cafés will be manned with either 2, 3 or 4 TAs. These are intended primarily to help with assignments though other questions relating to the course material is also welcome.
 
-## Cafées (expected times)
-Cafées will be manned with either 2, 3 or 4 TAs. 
+ * Wednesdays 10:15-12:00
 
- * Wednesdays 15:15-17:00
-   * This sessions have a café structure and are dedicated to help with assignments and other open questions.
- * Fridays 14:15-16:00
-   * TA organised café classes for help with assignments and exercises.
-
-### Rooms
-
-#### Block 1
-In the overflow you are welcome to sit and work. You can come to the other rooms to ask for help.
-
-Wednesday: 
-  * NBB 2.3.I.164
-  * NBB 2.3.H.142
-  * NBB 2.2.H.142 -- Only manned in weeks with assignment deadlines; otherwise overflow room.
-  * NBB 2.1.H.142 -- Overflow room
-
-Friday: 
+### Block 1
   * DIKU 1-0-30
+  * DIKU 1-0-34
   * DIKU 1-0-37
-  * DIKU 1-0-26 -- Only manned in weeks with assignment deadlines; otherwise overflow room.
-  * DIKU 1-0-14 -- Overflow room.
 
-#### Block 2
-
-Wednesday (expect Week 48):
-  * NBB 2.3.H.142
-  * NBB 2.3.I.164
-  * NBB 2.2.H.142 -- Only in weeks with assignment deadlines.
-
-Wednesday (Week 48, only):
-  * NBB 2.0.G.064/070
-  * NBB 2.2.H.142
-
-Friday: 
-  * NBB 2.2.H.142
-  * NBB 2.3.H.142
-  * NBB 2.1.H.142 -- Only in weeks with assignment deadlines.
-  * NBB 2.1.I.156 -- Overflow room.
-
-
+### Block 2
+  * TBD
 
 ## Study group formation
 Online on Absalon or Discord.
 
 
-## Assignment
+## Assignments
 
 There are 6 assignment in total during the course with deadline roughly every two to three weeks. The assignments will be graded with points from 0 to 6 depending on the assignment. It is _not_ possible to re-hand-in any of the assignments. The details will be the following:
 
