@@ -217,7 +217,7 @@ Online on Absalon or Discord.
 
 ## Assignment
 
-There are 7 assignment in total during the course with deadline roughly every two to three weeks. The assignments will be graded with points from 0 to 6 depending on the assignment. It is not possible to re-hand-in any of the assignments. The details will be the following
+There are 6 assignment in total during the course with deadline roughly every two to three weeks. The assignments will be graded with points from 0 to 6 depending on the assignment. It is _not_ possible to re-hand-in any of the assignments. The details will be the following:
 
 
 | Title                                         | Expected deadline         | Topic | Maximum points |
@@ -227,9 +227,11 @@ There are 7 assignment in total during the course with deadline roughly every tw
 | A2: Concurrency                               | Sunday Week 43 @ 16:00    | OS    |       4 points |
 | A3: Client network distribution and security  | Sunday Week 47 @ 16:00    | CN    |       6 points |
 | A4: Architecture.                             | Sunday Week 50 @ 16:00    | Arc   |       6 points |
-| A5: [Will perhaps not be needed]              | Wednesday Week 02 @ 20:00 | None  |        1 point |
+| A5: Theoretical catch up                      | Wednesday Week 02 @ 20:00 | None  |       2 points |
 
 Assignments are made to be solved in groups of preferably three students, but groups of two active students will also do. We strongly encourage not to work alone. Groups cannot be larger than three students. Each group must make their own solutions and must share implementations and report with other. You are allowed to discuss material and ideas.
+
+The final assignment will only be theoretical.
 
 ### Feedback
 Feedback to assignments will be given by TAs on the course; we try to match with the TA of the exercise class. Feedback will focus on what could be approved in the assignment relating to both technical implementations, and report structure and material. The feedback may thus be useful for later assignment. The feedbeck will not be complete, so it can be useful also to talk with your TA at the exercises. Feedback will not give a direct justification of the evaluation in number of points.
@@ -245,17 +247,17 @@ When your TA has corrected your submission all members of the group will be give
 
 ## Exam qualification
 
-To qualify for the exam you are required to achieve at least 50 % of the total number of points in the assignments. 
+To qualify for the exam you are required to achieve at least 50 % of the total number of points in the assignments. That is 13 out of the total 26 points.
 
-Furthermore, we will require that you show a reasonable understanding of all parts (ARK, OS, CN) of the course. This is firstly interpreted as achieving points at least 40 % points in each the of topics. To optimise your understanding of the course, and since all assignments are in the syllabus, we encourage you to work with and hand in all sets.
+Furthermore, it is required that you show a reasonable understanding of all parts (ARK, OS, CN) of the course. This is firstly interpreted as achieving points at least 40 % points in each the of topics. To optimise your understanding of the course, and since all assignments are in the syllabus, we encourage you to work with and hand in all sets.
 
 Mapping of topics to assignments:
 
 |                      | A0 | A1 | A2 | A3 | A4 | A5 |
 | ---------------------|----|----|----|----|----|----|
+| Operating System     |    |  X |  X |    |    |    |
 | Computer network     |    |    |    |  X |    |    |
 | Machine architecture |    |    |    |    |  X |    |
-| Operating System     |    |  X |  X |    |    |    |
 
 The rule about 40 % of points for assignments in each topic, is included to make sure that you will uphold the learning goals for the course. We will teach you about many different abstractions and you should learn something about all of them. Without this rule you could attend the exam without e.g. learning anything about computer networks by getting enough points in the beginning of the course. The 40 % is chosen as it should be "easier" than the general rule of 50 %; it will therefore be:
 
@@ -264,5 +266,4 @@ The rule about 40 % of points for assignments in each topic, is included to make
   * Machine architecture (A4): 2 of the possible 6 points.
 
 If you qualified for the exam the previous year, you can take the exam as a re-exam. If you qualified earlier years, then contact the course organiser.
-
 
