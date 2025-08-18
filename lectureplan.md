@@ -9,10 +9,10 @@
 | 37   | 08 Sep | Basic | David    | Functions and text                                                            | COD 2.8-2.9, JG 5-7 |
 |      | 10 Sep | Basic | David    | Computer arithmetic                                                           | COD 3.1-3.3, 3.5 |
 | 38   | 15 Sep | Basic | David    | C Programming - pointers and memory                                           | JG 8-9, 11 |
-|      | 17 Sep | Basic | David    | C Programming - dynamic memory                                                | JG 12-13 |
+|      | 17 Sep | Basic | David    | C Programming - dynamic memory and cache                                      | JG 12-13, COD 5.1-5.4 |
 |      |        |       |          | Hand-in A0 -- file(0)                                                         |          |
-| 39   | 22 Sep | Basic | David    | Memory hierarchy and caching                                                  | COD 5.1-5.4 |
-|      | 24 Sep | OS    | David    | Intro to Operating systems - kernel, processes, system calls                  | OSTEP 2,4,5 |
+| 39   | 22 Sep | Basic | David    | Intro to Operating systems - kernel, processes, system calls                  | OSTEP 2,4,5 |
+|      | 24 Sep | OS    | David    | Process Scheduling                                                            | OSTEP 7,8,9,10 |
 | 40   | 29 Sep | OS    | David    | Virtual memory - hardware perspective                                         | COD 5.7-5.8 |
 |      | 01 Oct | OS    | David    | Virtual memory - OS perspective                                               | OSTEP 13,17 |
 |      |        |       |          | Hand-in A1 -- dynamic allocation + caching                                    |          |

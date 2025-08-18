@@ -84,13 +84,13 @@ TAs:
   * Tobias Andersen 
 
 ## Teaching
-Teaching in this course will be on a weekly basis. E.g. each week we will have a unified topic that will be introduced and examined. These subjects will be taught through a combination of out of class videos to watch, exercises, review sessions and lectures.
+Teaching in this course will be on a weekly basis. E.g. each week we will have a unified topic that will be introduced and investigated. These subjects will be taught through a combination of out of class videos to watch, exercises, review sessions and lectures.
 
 ### Recordings
-Much of the theoretical material will be first introduced via video recordings. These will be released the previous week so that you may view them in your own time before the start of the week. You will not be expected to know all presented material inside and out before attending any exercises or lectures, but will be expected to have at least viewed the material and identified any questions you still have. Small review quizzes will also be provided along with the recordings for you to test that you've obtained the expected learning from the videos. Note that these quizzes are just for revision and feedback and so do not affect your assignments or final grades in any way.
+Much of the theoretical material will be first introduced via video recordings. These will be released the previous week so that you may view them in your own time before the start of the week. You will not be expected to know all presented material inside and out before attending any exercises or lectures, but will be expected to have at least viewed the material, investigated the written material, and identified any questions you still have. Small review quizzes will also be provided along with the recordings for you to test that you've obtained the expected learning from the videos. Note that these quizzes are just for revision and feedback and so do not affect your assignments or final grades in any way.
 
 ### Review Sessions
-Every Monday a session will be held to review the weeks video material. This is an opportunity to ask questions directly to the teachers about the weeks material. This will primarily be a repeat of the material presented in the videos so if you are already familiar and confident with the video material and exercise topics attendance at the review sessions should be viewed as optional.
+Every Monday a session will be held to review the weeks video material. This is an opportunity to ask questions directly to the teachers about the weeks material. This will primarily be a repeat of the material presented in the videos so if you are already familiar and confident with the video and written material and exercise topics attendance at the review sessions should be viewed as optional.
 
 #### Block 1
   * Monday at 15:15-17:00 in DIKU, Store UP1
@@ -99,7 +99,7 @@ Every Monday a session will be held to review the weeks video material. This is 
  * TBD
 
 ### Advanced Lectures
-Every Wednesday a more traditional lecture will be held to introduce further topics not covered in the videos. This will be material that is more complex and would benefit from an in-person explanation. Recordings of such material should not be assumed to be available and so attendance is expected by all at this lecture.
+Every Wednesday a more traditional lecture will be held to introduce further topics not covered in the videos. This will be material that is more complex and would benefit from an in-person explanation. Recordings of such material should not be assumed to be available and so attendance is encouraged by all at this lecture.
 
 #### Block 1
 
@@ -117,31 +117,26 @@ Exercise classes will introduce many of the smaller concepts and techniques we w
 
 Please disregard the location stated at skema.ku.dk or in the myUCPH app. Please refer to the plan below:
 
-<!--See [skema.ku.dk](https://skema.ku.dk/tt/tt.asp?SDB=KU2425&language=DK&folder=Reporting&style=textspreadsheet&type=module&idtype=id&id=125310&weeks=6-16&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+textspreadsheet) for Block 1 room details.
+See [skema.ku.dk](https://skema.ku.dk/tt/tt.asp?SDB=KU2526&language=DK&folder=Reporting&style=textspreadsheet&type=module&idtype=id&id=133500&weeks=6-16&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+textspreadsheet) for Block 1 room details.
 
- -->
 #### Block 1
-<!--  * Class 1: Benjamin
+  * Class 1:
     * Monday: NBB 2.3.I.164
     * Wednesday: NBB 2.3.I.164
-  * Class 2: Christian and Riasat
-    * Monday: Biocenter 4-0-02
-    * Wednesday: DIKU 1-0-34
-  * Class 3: Emil
+  * Class 2:
     * Monday: NBB 2.3.H.142
-    * Wednesday: NBB 2.2.I.158
-  * Class 4: Jóhann
-    * Monday: Biocenter 4-0-02 - Sharing room with Christian and Riasat
-    * Wednesday: DIKU 1-0-22 
-  * Class 5: Lea and Tobias A
-    * Monday: NBB 2.1.H.142 and NBB 2.0.G.064/070 (if needed)
-    * Wednesday: NBB 2.1.H.142
-  * Class 6: Malte
-    * Monday: NBB 2.0.G.064/070
-    * Wednesday: NBB 2.2.H.142
-  * Class 7: Tobias NH
-    * Monday: NBB 2.0.G.064/070
     * Wednesday: NBB 2.3.H.142
+  * Class 3:
+    * Monday: HCØ A106
+    * Wednesday: HCØ A106
+  * Class 4:
+    * Monday: HCØ A107
+    * Wednesday: HCØ A107
+  * Class 5:
+    * Monday: HCØ A110
+    * Wednesday: HCØ A110
+
+<!--
 
 Make sure that you and your study group joins a class in the Absalon Course Room -> People -> Class
 
