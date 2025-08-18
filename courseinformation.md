@@ -117,8 +117,6 @@ Exercise classes will introduce many of the smaller concepts and techniques we w
 
 Please disregard the location stated at skema.ku.dk or in the myUCPH app. Please refer to the plan below:
 
-See [skema.ku.dk](https://skema.ku.dk/tt/tt.asp?SDB=KU2526&language=DK&folder=Reporting&style=textspreadsheet&type=module&idtype=id&id=133500&weeks=6-16&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+textspreadsheet) for Block 1 room details.
-
 #### Block 1
   * Class 1:
     * Monday: NBB 2.3.I.164
@@ -139,32 +137,13 @@ See [skema.ku.dk](https://skema.ku.dk/tt/tt.asp?SDB=KU2526&language=DK&folder=Re
 <!--
 
 Make sure that you and your study group joins a class in the Absalon Course Room -> People -> Class
+-->
 
 
 #### Block 2
+TBD
 
- * Class 1: Benjamin
-   * Monday: NBB 2.0.G.064/070
-   * Wednesday: NBB 2.0.G.064/070
- * Class 2: Christian and Riasat
-   * Monday: NBB 2.3.H.142
-   * Wednesday: NBB 2.3.H.142
- * Class 3: Emil
-   * Monday: NBB 2.3.I.164
-   * Wednesday: NBB 2.3.I.164
- * Class 4: Lea
-   * Monday: NBB 2.0.G.064/070
-   * Wednesday: NBB 2.0.G.064/070
- * Class 5: Tobias A
-   * Monday: NBB 2.0.G.064/070
-   * Wednesday: NBB 2.0.G.064/070
- * Class 6: Malte
-   * Monday: NBB 2.3.H.142
-   * Wednesday: NBB 2.3.H.142
- * Class 7: Tobias NH
-   * Monday: NBB 2.3.I.164
-   * Wednesday: NBB 2.3.I.164
--->
+
 
 ### Room details
 Map of Nørre Campus:
