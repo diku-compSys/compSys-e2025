@@ -2,7 +2,7 @@
 
 | Week | Date   | Topic | Lecture  | Topic                                                                         | Material |
 | ---- | ----   | ----- | -------  | ------                                                                        | -------- |
-| 36   | 01 Sep | Intro | David    | Course introduction                                                           | COD 1.1-1.4,1.6-1.8 |
+| 36   | 01&nbsp;Sep | Intro | David    | Course introduction                                                           | COD 1.1-1.4,1.6-1.8 |
 |      |        | Basic | David    | Computers and C programming                                                   | JG 1-3 |
 |      | 03 Sep | Basic | David    | Assembly code and machine model                                               | COD 2.1-2.4,2.6-2.7, JG 4 |
 | 37   | 08 Sep | Basic | David    | Functions and text                                                            | COD 2.8-2.9, JG 5-7 |
