@@ -37,7 +37,7 @@
 |      | 10 Dec | Arc   | Finn     | Avanceret Mikroarkitektur II                                                  | [note](https://github.com/diku-compSys/compSys-e2023-pub/blob/main/resources/Afviklingsplot/plot.md) |
 |      |        |       |          | Hand-in A4                                                                    |  |
 | 51   | 15 Dec | Arc   | Finn     | Opsamling. Maskinnær optimering. A6 handout                                   | TBD |
-|      | 17 Dec |       |          | Christmas lecture...     |         |
+|      | 17&nbsp;Dec |       |          | Christmas lecture...     |         |
 | 52   |        |       |          | Christmas vacation - No lectures                                              |         |
 | 1    |        |       |          | Christmas vacation - No lectures                                              |         |
 <!-- | 1    |        |       |          | Hand-in A6 -- Maskinnær optimering                                            |         | -->
