@@ -4,6 +4,7 @@
 | ---- | ----   | ----- | -------  | ------                                                                        | -------- |
 | 36   | 01 Sep | Intro | David    | Course introduction                                                           | COD 1.1-1.4,1.6-1.8 |
 |      |        | Basic | David    | Computers and C programming                                                   | JG 1-3 |
+|      | 03 Sep |       | TAs      | Master Class on Tools for the Working Programmer, 10:15 to 12:00              |  |
 |      | 03 Sep | Basic | David    | Assembly code and machine model                                               | COD 2.1-2.4,2.6-2.7, JG 4 |
 | 37   | 08 Sep | Basic | David    | Functions and text                                                            | COD 2.8-2.9, JG 5-7 |
 |      | 10 Sep | Basic | David    | Computer arithmetic                                                           | COD 3.1-3.3, 3.5 |
