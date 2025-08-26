@@ -186,7 +186,7 @@ There are 6 assignment in total during the course with deadline roughly every tw
 | A4: Architecture.                             | Sunday Week 50 @ 16:00    | Arc   |       6 points |
 | A5: Theoretical catch up                      | Wednesday Week 02 @ 20:00 | None  |       2 points |
 
-Assignments are made to be solved in groups of preferably three students, but groups of two active students will also do. We strongly encourage not to work alone. Groups cannot be larger than three students. Each group must make their own solutions and must share implementations and report with other. You are allowed to discuss material and ideas.
+Assignments are made to be solved in groups of preferably three students, but groups of two active students will also do. We strongly encourage not to work alone. Groups cannot be larger than three students. Each group must make their own solutions and must share implementations and report with other. You are allowed to discuss material and ideas. All assignment handins should include the standard KU Generative AI declaration [KU Generative AI declaration](https://kunet.ku.dk/work-areas/teaching/digital-learning/chatgpt-and-ai/new-rules-and-principles-from-september-2025/template-for-declaration/Pages/default.aspx).
 
 The final assignment will only be theoretical.
 
