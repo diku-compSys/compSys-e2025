@@ -160,13 +160,19 @@ Cafés will be manned with either 2, 3 or 4 TAs. These are intended primarily to
 
  * Wednesdays 10:15-12:00
 
-### Block 1
-  * DIKU 1-0-30
-  * DIKU 1-0-34
-  * DIKU 1-0-37
+#### Block 1
+In the  you are welcome to sit and work. You can come to the other rooms to ask for help.
 
-### Block 2
+  * DIKU 1-0-30, Pavillon stuen
+  * DIKU 1-0-34, Pavillon stuen
+  * DIKU 1-0-37, Pavillon stuen (only before deadlines, otherwise overflow)
+
+All rooms are in Universitetsparken 13, the pavilion outside the HCØ building. Do not go to the DIKU building.
+
+#### Block 2
+
   * TBD
+
 
 ## Study group formation
 Online on Absalon or Discord.
