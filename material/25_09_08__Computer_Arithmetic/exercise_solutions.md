@@ -39,13 +39,13 @@ Exponent: 000 1100 0
 Mantissa: 000 0000 0000 0000 0000 0000
 
 So clearly a positive number, +
-Mantissa is simply 0. 
+Mantissa is simply 0, but remember the implicit 1. 
 Exp, we must account for bias, so E = Exp - bias, i.e. 
 000 1100 0 = 24-127 = -103 
 
 Remember representation (−1)^S * M * 2^E ->\
 Answer:
-* 1 * 0 * 2^(-103)
+* 1 * 1 * 2^(-103)
 
 ## 3.23 Write down binary representation of decimal number 63.25 assuming IEEE-754 single precision format.
 
