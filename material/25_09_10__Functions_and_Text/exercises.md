@@ -197,7 +197,8 @@ on files that did not have the content they thought it had.
 ### Writing
 Take a look at the code in `lecture_code/fwrite-simple.c`. Make a copy of it 
 that can write multiple byte values to the same file. Your file should be able
-to produce multiple test files for each of the 4 data types. 
+to produce multiple test files for each of the 4 formats used in A0 (ASCII, 
+ISO-8859, UTF-8 or data)
 
 Hint: Learn to prioritise what tasks are important. As you're generating static
 test data, do you need to accept command line arguments, or can you just 
