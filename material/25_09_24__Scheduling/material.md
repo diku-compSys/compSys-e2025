@@ -1,6 +1,7 @@
 There are no recordings for this lecture as this is a new lecture for this
 year, and I'd rather see what bits work or not before recording anything. 
-Enjoy a bit more free time than usual this week.
+There are also no quizzes as they were just make for last year. Enjoy a bit 
+more free time than usual this week.
 
 # Reading
 
