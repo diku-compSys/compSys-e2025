@@ -16,7 +16,7 @@ int read_record(struct record *r, FILE *f) {
   }
 
   r->line = line;
-
+  // printf("START: %s\n", line);
   char* start = line;
   char* end;
 
@@ -25,15 +25,30 @@ int read_record(struct record *r, FILE *f) {
   // assign that to a attribute, in this case the 'name'. We then update the 
   // start variable to be the next element in the line.
   if ((end = strstr(start, "\t"))) {
-    r->name = start; 
-    *end = 0; 
+    *end = 0;
+    r->name = start;  
     start = end+1;
   }
 
-  if ((end = strstr(start, "\t"))) {
-    r->lon = atof(start); *end = 0; start = end+1;
+  if ((end = strstr(start, "\t"))) { 
+    r->lon = atof(start);  *end = 0; start = end+1;
   }
 
+  if ((end = strstr(start, "\t"))) { 
+    r->lat = atof(start);  *end = 0; start = end+1;
+  }
+
+  // Discards all but last item
+  // Davids solution.
+  for (int i = 0; i<6; i++) { 
+    if ((end = strstr(start, "\t"))) {
+      start = end+1;
+    } 
+  }
+
+  if ((end = strstr(start, "\n"))) { 
+    r->north = atof(start); *end = 0; start = end+1;
+  }
   return 0;
 }
 
@@ -44,6 +59,12 @@ struct record* read_records(const char *filename, int *n) {
   if (f == NULL) {
     return NULL;
   }
+
+  // Sanitize header
+  char *line = NULL;
+  size_t _n;
+  getline(&line, &_n, f);
+  free(line);
 
   int capacity = 100;
   int i = 0;
