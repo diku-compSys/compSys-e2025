@@ -96,17 +96,16 @@ Every Monday a session will be held to review the weeks video material. This is 
   * Monday at 15:15-17:00 in DIKU, Store UP1
 
 #### Block 2
- * TBD
+  * Monday at 15:15-17:00 in DIKU, Store UP1
 
 ### Advanced Lectures
 Every Wednesday a more traditional lecture will be held to introduce further topics not covered in the videos. This will be material that is more complex and would benefit from an in-person explanation. Recordings of such material should not be assumed to be available and so attendance is encouraged by all at this lecture.
 
 #### Block 1
-
  * Wednesdays at 15:15-17:00 in DIKU, Store UP1
 
 #### Block 2
- * TBD
+ * Wednesdays at 15:15-17:00 in DIKU, Store UP1
 
 
 ## Exercise Classes
@@ -141,8 +140,18 @@ Make sure that you and your study group joins a class in the Absalon Course Room
 
 
 #### Block 2
-TBD
-
+  * Class 1 + 2:
+    * Monday: Biocenter 2-0-07/09
+    * Wednesday: Biocenter 2-0-07/09
+  * Class 3:
+    * Monday: Biocenter 2-1-07/09
+    * Wednesday: Biocenter 2-1-07/09
+  * Class 4:
+    * Monday: Biocenter 2-1-17
+    * Wednesday: Biocenter 2-1-17
+  * Class 5:
+    * Monday: Biocenter 2-2-07/09
+    * Wednesday: Biocenter 2-2-07/09
 
 
 ### Room details
@@ -171,7 +180,11 @@ All rooms are in Universitetsparken 13, the pavilion outside the HCØ building. 
 
 #### Block 2
 
-  * TBD
+  * Biocenter 2-0-07/09
+  * Biocenter 2-1-17
+  * Biocenter 2-2-17 (only before deadlines, otherwise overflow)
+
+
 
 
 ## Study group formation
