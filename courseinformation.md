@@ -123,7 +123,7 @@ Please disregard the location stated at skema.ku.dk or in the myUCPH app. Please
   * Class 2:
     * Monday: NBB 2.3.H.142
     * Wednesday: NBB 2.3.H.142
-  * Class 3:
+  * Class 3: (Cancelled)
     * Monday: HCØ A106
     * Wednesday: HCØ A106
   * Class 4:
