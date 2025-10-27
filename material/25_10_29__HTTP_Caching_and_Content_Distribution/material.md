@@ -1,35 +1,32 @@
 # Recordings
 
-[All Recordings](https://sid.erda.dk/sharelink/eDLFyPjU8i)
+[All Recordings](https://sid.erda.dk/sharelink/EYcPTPmDss)
 
-## Concurrent servers
+## The Application Layer
 
-[Iterative Servers](https://sid.erda.dk/share_redirect/H8GzZHR7JO)
+[Overview](https://sid.erda.dk/share_redirect/crqSLy8PdI)
 
-[Process-based Servers](https://sid.erda.dk/share_redirect/Dqbs6IRNkJ)
+[Sockets](https://sid.erda.dk/share_redirect/dVBzZ04tMG)
 
-[Event-based Servers](https://sid.erda.dk/share_redirect/eE9DLHXpbI)
+[Application Architectures](https://sid.erda.dk/share_redirect/eJ4LCb2RzD)
 
-[Thread-based Servers](https://sid.erda.dk/share_redirect/DwaXK0ftzb)
+## HTTP
 
-[Python-based Servers](https://sid.erda.dk/share_redirect/B1H453425b)
+[HTTP](https://sid.erda.dk/share_redirect/cpaKxoRN2p)
 
-## Security Introduction
+[Persistent Connections](https://sid.erda.dk/share_redirect/A0f7wHgSLe)
 
-[Security Principles](https://sid.erda.dk/share_redirect/cCnlzaIREo)
+[Caching](https://sid.erda.dk/share_redirect/FEXmKv633j)
 
-[Hashes](https://sid.erda.dk/share_redirect/fAMmRJmaJa)
+## Content Distribution
 
-[Hashing Use Cases](https://sid.erda.dk/share_redirect/BkrliCtgwG)
+[DASH](https://sid.erda.dk/share_redirect/gPh4swp22W)
 
-[Passwords](https://sid.erda.dk/share_redirect/GUom5cmpRa)
-
-[Salting](https://sid.erda.dk/share_redirect/EgY8LvLLHx)
+[CDNs](https://sid.erda.dk/share_redirect/hpyuq4xUtM)
 
 # Reading
 
-Computer Systems: A Programmers Perspective Chapters 12.1-12.3 
-Computer Networking: A Top-Down Approach Chapter 8.1-8.2
+Computer Networking: A Top-Down Approach Chapters 2.1, 2.2, 2.3.1, 2.3.2, 2.6.1 - 2.6.3
 
 # Revision Quiz
 
