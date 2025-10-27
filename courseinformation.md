@@ -92,7 +92,7 @@ Much of the theoretical material will be first introduced via video recordings. 
 ### Review Sessions
 Every Monday a session will be held to review the weeks video material. This is an opportunity to ask questions directly to the teachers about the weeks material. This will primarily be a repeat of the material presented in the videos so if you are already familiar and confident with the video and written material and exercise topics attendance at the review sessions should be viewed as optional.
 
-#### Block 1
+#### Block 1 (including Week 45)
   * Monday at 15:15-17:00 in DIKU, Store UP1
 
 #### Block 2
@@ -103,6 +103,9 @@ Every Wednesday a more traditional lecture will be held to introduce further top
 
 #### Block 1
  * Wednesdays at 15:15-17:00 in DIKU, Store UP1
+
+#### Week 45, exam week
+ * Friday at 13:15-15:00 in HCØ, Aud 1
 
 #### Block 2
  * Wednesdays at 15:15-17:00 in DIKU, Store UP1
@@ -124,26 +127,39 @@ Please disregard the location stated at skema.ku.dk or in the myUCPH app. Please
     * Monday: NBB 2.3.H.142
     * Wednesday: NBB 2.3.H.142
   * Class 3: (Cancelled)
-    * Monday: HCØ A106
+<!--     * Monday: HCØ A106
     * Wednesday: HCØ A106
-  * Class 4:
+ -->
+    * Class 4:
     * Monday: HCØ A107
     * Wednesday: HCØ A107
   * Class 5:
     * Monday: HCØ A110
     * Wednesday: HCØ A110
 
-<!--
+#### Week 45
+  * Monday at 13:15 to 15:00
+  * Friday at 09:15 to 12:00
 
-Make sure that you and your study group joins a class in the Absalon Course Room -> People -> Class
--->
+  * Class 1:
+    * Monday: NBB 2.3.I.164
+    * Friday: NBB 2.1.I.156
+  * Class 2 + 3:
+    * Monday: NBB 2.3.H.142
+    * Friday: NBB 2.2.I.158
+  * Class 4:
+    * Monday: HCØ A107
+    * Friday: NBB 2.2.H.142
+  * Class 5:
+    * Monday: HCØ A110
+    * Friday: NBB 2.1.H.142
 
 
 #### Block 2
-  * Class 1 + 2:
+  * Class 1:
     * Monday: Biocenter 2-0-07/09
     * Wednesday: Biocenter 2-0-07/09
-  * Class 3:
+  * Class 2 + 3:
     * Monday: Biocenter 2-1-07/09
     * Wednesday: Biocenter 2-1-07/09
   * Class 4:
