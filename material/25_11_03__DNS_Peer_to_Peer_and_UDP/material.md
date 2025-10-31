@@ -1,32 +1,34 @@
 # Recordings
 
-[All Recordings](https://sid.erda.dk/sharelink/EYcPTPmDss)
+[All Recordings](https://sid.erda.dk/sharelink/APidFwp64d)
 
-## The Application Layer
+## DNS
 
-[Overview](https://sid.erda.dk/share_redirect/crqSLy8PdI)
+[Network Address Translation](https://sid.erda.dk/share_redirect/F19D2ekdP5)
 
-[Sockets](https://sid.erda.dk/share_redirect/dVBzZ04tMG)
+[DNS Heirarchy](https://sid.erda.dk/share_redirect/F2cNXZAJA9)
 
-[Application Architectures](https://sid.erda.dk/share_redirect/eJ4LCb2RzD)
+[DNS Design](https://sid.erda.dk/share_redirect/FGsJlKIxVx)
 
-## HTTP
+[DNS protocol](https://sid.erda.dk/share_redirect/fz7tmKGJEB)
 
-[HTTP](https://sid.erda.dk/share_redirect/cpaKxoRN2p)
+[Updating DNS records](https://sid.erda.dk/share_redirect/CoLpet8rlz)
 
-[Persistent Connections](https://sid.erda.dk/share_redirect/A0f7wHgSLe)
+[DNS problems](https://sid.erda.dk/share_redirect/eh59pa9mZj)
 
-[Caching](https://sid.erda.dk/share_redirect/FEXmKv633j)
+## Peer to Peer
 
-## Content Distribution
+[Peer to Peer performance](https://sid.erda.dk/share_redirect/AGNuz8msDj)
 
-[DASH](https://sid.erda.dk/share_redirect/gPh4swp22W)
+[Bit-Torrent](https://sid.erda.dk/share_redirect/DOWrliFZMN)
 
-[CDNs](https://sid.erda.dk/share_redirect/hpyuq4xUtM)
+## UDP
+
+[UDP](https://sid.erda.dk/share_redirect/fKrbQCqnNV)
 
 # Reading
 
-Computer Networking: A Top-Down Approach Chapters 2.1, 2.2, 2.3.1, 2.3.2, 2.6.1 - 2.6.3
+Computer Networking: A Top-Down Approach Chapters 2.4, 2.5, 3.1 - 3.3
 
 # Revision Quiz
 
