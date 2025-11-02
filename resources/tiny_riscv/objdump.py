@@ -4,7 +4,7 @@ import sys, re, os, mimetypes, argparse, requests, json
 import urllib.request
 import urllib.parse
 
-parser = argparse.ArgumentParser(description='Dumps a riscv elf file to stdout.')
+parser = argparse.ArgumentParser(description='Dumps a riscv-v elf file to stdout.')
 
 flags = {"optS": "-S",
          "opts": "-s",
@@ -18,8 +18,8 @@ for key, value in flags.items():
 
 # parser.add_argument('-o', dest='output',
 #                    help='Write output to this file')
-parser.add_argument('files', metavar='C-files', nargs="+",
-                    help='translates and assembles file')
+parser.add_argument('files', metavar='elf-file', nargs="+",
+                    help='disassembles riscv .elf file')
 
 
 
@@ -35,15 +35,15 @@ for key, value in flags.items():
 DATA = {}
 DATA["flags"] = parsedflags
 
-print(parsedflags)
+# print(parsedflags)
 
 num = 1
 for f in args.files:
   extensions = f.split(".")
   fileextension = extensions[-1]
 
-  if fileextension != 'riscv':
-    print("The input is expected to be a RISCV Assembly program; fileextension '.riscv'.\n")
+  if fileextension != 'elf':
+    print("The input is expected to be a RISCV Elf file; fileextension '.elf'.\n")
     exit()
 
   if not os.path.isfile(f):
@@ -61,6 +61,9 @@ for f in args.files:
   num = num + 1
 
 # print(args)
+if num != 2:
+  print("Exactly ONE elf file must be given")
+  exit()
 
 headers = { 'Content-Type': 'text/json'}
 # print(DATA)
