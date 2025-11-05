@@ -37,8 +37,8 @@
 | 50   | 08 Dec | Arc   | Finn     | Avanceret Mikroarkitektur I                                                   | COD 4.11 + [note](https://github.com/diku-compSys/compSys-e2023-pub/blob/main/resources/Afviklingsplot/plot.md) |
 |      | 10 Dec | Arc   | Finn     | Avanceret Mikroarkitektur II                                                  | [note](https://github.com/diku-compSys/compSys-e2023-pub/blob/main/resources/Afviklingsplot/plot.md) |
 |      |        |       |          | Hand-in A4                                                                    |  |
-| 51   | 15 Dec | Arc   | Finn     | Opsamling. Maskinnær optimering.                                              | TBD |
-|      | 17&nbsp;Dec |       |          | Christmas lecture...     |         |
+| 51   | 15 Dec | Arc   | Finn     | Vector processing. Opsamling. Maskinnær optimering.                           | TBD |
+|      | 17 Dec |       |          | Christmas lecture...     |         |
 | 52   |        |       |          | Christmas vacation - No lectures                                              |         |
 | 1    |        |       |          | Christmas vacation - No lectures                                              |         |
 | 2    | 06 Jan | CN    | Michael  | Network layer, data plane, 13-15, DIKU St.UP1                                 | KR 4.1 - 4.2.4, 4.3 (Optional read - [Design Philosophy of DARPA Internet Protocols](http://www.cs.princeton.edu/courses/archive/spr14/cos461/papers/clark88.pdf)) |
