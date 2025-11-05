@@ -1,7 +1,8 @@
 # Managing Small File Requests
 This exercise will continue our guidance through the A3 assignment. It 
 presupposes that you have completed the subtasks described in the previous
-exercises. You will also need to consult the handout for A3 for technical descriptions of the protocol and system as a whole.
+exercises. You will also need to consult the handout for A3 for technical 
+descriptions of the protocol and system as a whole.
 
 Note, you do not need to follow this guide if you have your own ideas about 
 how to solve A3. Additionally, this is not intended as a complete guide to 
