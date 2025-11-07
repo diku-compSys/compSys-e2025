@@ -1,3 +1,34 @@
+### BONUS mid-assignment correction!
+An error has been pointed out to me in the handed out Python code! You can get
+a fixed version in 'peer_proper_salting.py' in both the 'first_peer' and 
+'second_peer' directories. The problem was that the old python peer was not
+correctly storing its own signature and salt in the 'network' variable, it was
+using its own local salt and signature which wouldn't match the eventual 
+network-side hash in the rest of the network. It's been changed though so that
+it will put itself in the network, but won't know a salt and signature until
+it receives a response to its registration message. Once it gets the 
+registration reply including the full network, it will use the signature and 
+salt in that to update its own network entry. In the meantime, when asked for
+the network, it won't include partial entries (e.g. itself if it still is 
+awaiting a reply to its registration)
+
+One other addition has been that if the peer receives a registration request
+before it's received a response to its own registration (or even before it's 
+sent a request) we'll just assume that we're the first peer and generate a 
+network salt and signature for ourselves. This is something of a hack, but it
+should mean that the functionality is as close to the handed out functionality 
+you're used to, so is hopefully the least impactful edit possible.
+
+If I've done this correctly, you should be able to swap in the new peer with
+minimum fuss, but if not don't worry. Feel free to stick with the handed out 
+peer. Be aware that it might break if you test repeatedly with more than 2 
+peers at the same time, and if you follow its functionality in your own C peer
+then you might lose something like 5% of your grade so not nothing, but not 
+anything major. 
+
+No adjustments or errors were in the protocol itself, and the tasks as outlined
+in the pdf are still the same. 
+
 # Managing Large File Requests and File Management
 This exercise will continue our guidance through the A3 assignment. It 
 presupposes that you have completed the subtasks described in the previous
@@ -89,6 +120,19 @@ Retrieving a file may take time, so we might have a half assembled file still
 in the process of being written to. If another peer requests it at that time, 
 we don't want it to be served, as then we will provide a half-assembled file.
 
-We should introduce some way of tracking which files the _client_thread_ is currently retrieving, so that if the _server_thread_ is asked to do so it will either refuse to do so, or wait until the file has finished being assembled. There are a few ways to do this, but I feel the most obvious is to add some shared variable between the two threads that can be updated with whatever files are currently being retried. The _server_thread_ can then consult that variable any time it attempts to serve a file, and not do so if it currently listed as being retrieved. Any mention of global variables should make you consider how you manage access to them, so as to avoid race conditions.
+We should introduce some way of tracking which files the _client_thread_ is 
+currently retrieving, so that if the _server_thread_ is asked to do so it will 
+either refuse to do so, or wait until the file has finished being assembled. 
+There are a few ways to do this, but I feel the most obvious is to add some 
+shared variable between the two threads that can be updated with whatever files
+are currently being retried. The _server_thread_ can then consult that variable
+any time it attempts to serve a file, and not do so if it currently listed as 
+being retrieved. Any mention of global variables should make you consider how 
+you manage access to them, so as to avoid race conditions.
 
-You should ensure that your system is free of deadlocks, presumably through the use of some locking. If you end up having introduced multiple locks then you need to make sure that you have not further introduced the potential for deadlock. Remember that just the potential for deadlock is enough to be a problem, and just running your program a few times without problems is not enough to conclude that you're deadlock free.
+You should ensure that your system is free of deadlocks, presumably through the
+use of some locking. If you end up having introduced multiple locks then you 
+need to make sure that you have not further introduced the potential for 
+deadlock. Remember that just the potential for deadlock is enough to be a 
+problem, and just running your program a few times without problems is not 
+enough to conclude that you're deadlock free.
