@@ -4,15 +4,15 @@ import sys, re, os, mimetypes, argparse, requests, json
 import urllib.request
 import urllib.parse
 
-parser = argparse.ArgumentParser(description='Compiles a C program into a gcc output x86_64.')
+parser = argparse.ArgumentParser(description='Compiles a C or ASM program into a riscv .elf')
 
-flags = {"march": "-march=rv32im",
-         "mabi":  "-mabi=ilp32",
-         "tldp": "-fno-tree-loop-distribute-patterns",
-         "relax": "-mno-relax",
-         "static": "-static",
-         "nsf": "-nostartfiles",
-         "nstdlib": "-nostdlib",
+flags = {# "march": "-march=rv32im",
+         # "mabi":  "-mabi=ilp32",
+         # "tldp": "-fno-tree-loop-distribute-patterns",
+         # "relax": "-mno-relax",
+         # "static": "-static",
+         # "nsf": "-nostartfiles",
+         # "nstdlib": "-nostdlib",
          "opt0": "-O0",
          "opt1": "-O1",
          "opt2": "-O2",
@@ -38,7 +38,7 @@ parser.add_argument('files', metavar='C-files', nargs="+",
 args = parser.parse_args()
 
 
-parsedflags = ""
+parsedflags = "-march=rv32im -mabi=ilp32 -fno-tree-loop-distribute-patterns -static -nostartfiles -nostdlib "
 for key, value in flags.items():
   if vars(args)[key]:
     parsedflags += value
