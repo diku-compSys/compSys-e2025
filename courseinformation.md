@@ -95,7 +95,10 @@ Every Monday a session will be held to review the weeks video material. This is 
 #### Block 1 (including Week 45)
   * Monday at 15:15-17:00 in DIKU, Store UP1
 
-#### Block 2
+#### Block 2, Week 47-48
+  * Monday at 15:15-17:00 in DIKU, Lille UP1
+
+#### Block 2, 49+
   * Monday at 15:15-17:00 in DIKU, Store UP1
 
 ### Advanced Lectures
@@ -107,7 +110,10 @@ Every Wednesday a more traditional lecture will be held to introduce further top
 #### Week 45, exam week
  * Friday at 13:15-15:00 in HCØ, Aud 1
 
-#### Block 2
+#### Block 2, Week 47-48
+ * Wednesdays at 15:15-17:00 in Lundbeck Auditorium
+
+#### Block 2, 49+
  * Wednesdays at 15:15-17:00 in DIKU, Store UP1
 
 
