@@ -1,0 +1,72 @@
+Complexity - et CISC instruktionssæt.
+====================================
+
+"Complexity" er et instruktionssæt udviklet til at tydliggøre overvejelser vedrørende
+design af instruktionssæt, i særdeleshed forskelle mellem RISC og CISC.
+
+"Complexity" er et CISC (Complex Instruction Set Computing) instructionssæt.
+Instruktioner er 4,6,8 eller 10 bytes lange og meget generelle. Her beskrives kun udvalgte
+instruktioner og deres indkodning.
+
+"Complexity" har 16 General Purpose registre, R0-R15.
+
+"Complexity" Instruktioner angiver en operation, f.eks. addition, og 3 operander:
+Operander kan være i en af de 16 registre, men de kan også være i maskinens lager på addresser
+der beregnes af instruktionen.
+
+Instruktionerne består af et 32-bit ord efterfulgt af 0-3 halv-ord (16 bits) indeholdende
+yderligere data. Det første ord angiver den operation der skal udføres, de fleste registre der skal indgå
+og en addresserings-måde for hver operand. Antallet af efterfølgende halv-ord beregnes
+ud fra de angivne addresserings-måder. Indkodningen af det første ord er:
+
+    ooooooooaaaaxxxxbbbbyyyycccczzzz                        A = op(B,C) eller op(A,B,C)
+    |       |   |   |   |   |   |
+    op      |   |   |   |   |   C register
+            |   |   |   |   C addresserings måde
+        A reg   |   |   B register
+                |   B addresserings måde
+        A addresserings måde
+
+        Operationer (op):
+        00 00000000    Reserveret til andre formater
+        01 00000001    ADD                          05 00000101    XOR
+        02 00000010    SUB                          06 00000110    MUL
+        03 00000011    AND                          08 00001000    SHL
+        04 00000100    OR                           09 00001001    LSHR
+        0A 00001010    ASHR
+        0B 00001011    ADDR    adresseberegning. A = C + addressen på operand B.
+                       -       hvis B ikke har en adresse anvendes adressen på næste insn.
+        80-83 100000rr JMP Betinget hop til A, hvis relationen (B rrr C) er opfyldt
+                       -       rr: 00=eq,01=ne,10=lt,11=le
+                       - ubetinget hop: B=#0,C=#0 og rr=eq.
+        
+
+Der er 16 addresseringsmåder:
+
+    Måde         Navn                                    Syntax eksempel     Ekstra half word?
+    0    0000    Register direkte                        r5                  no
+    1    0001    Register indirekte                      (r5)                no
+    2    0010    20-bit signed const                     #360                yes (16 lo bits of 20 bit const, reg specifier give top 4 bits)
+    3    0011    20-bit imm indirect                     (0x5600)            yes (16 lo bits of 20 bit address, reg specifier give top 4 bits)
+    4    0100    Reg indir med 8 bit offset+modif        6(r5 += 16)         yes (2x8 signed offsets)
+    5    0101    Reg indir med 16 bit offset             0x456(r5)           yes (16 bit signed offset)
+    6    0110    Reg indexed med 12 bit offset           0x45(r5+r7)         yes (4 bit register and 12 bit unsigned offset)
+    7    0111    unused
+    8-F  1xxx    7-bit signed const                      #3                  no (xxx give top 2 bits, reg specifier give low 4 bits)
+
+Eksempel kode:
+
+// copy loop:
+//  for (n = 0; n < limit; ++n) a[n] = b[n]
+// n i reg 1, a i reg 2, b i  reg 3 lim i reg 4
+
+    ADD r1,#0,#0                        0: 01010000
+    JMP #loop_check,#0 eq #0            4: 80200000 0016
+Loop:
+    ADD (r2,r1),(r3,r1),#0             10: 01A2A300 2000 3000
+    ADD r1,r1,#1                       12: 01010181
+loop_check:
+    JMP #loop,r1 lt r4                 16: 82200104 0004
+
+
+
