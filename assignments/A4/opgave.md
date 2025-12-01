@@ -43,8 +43,8 @@ fire forskellige forudsigere:
 
  * [NT] Hop forudsiges altid Ikke-taget.
  * [BTFNT] Baglæns hop forudsiges altid taget, forlæns forudsiges altid ikke taget.
- * [Bimodal] Dynamisk forudsigelse. Find selv ud af, hvad bimodal predictor.
- * [gShare] Dynamisk forudsigelse. Find selv ud af, hvad en gShare predictor.
+ * [Bimodal] Dynamisk forudsigelse. Find selv ud af, hvad en bimodal predictor er.
+ * [gShare] Dynamisk forudsigelse. Find selv ud af, hvad en gShare predictor er.
 
 For Bimodal og gShare skal optælles data for 4 forskellige størrelser: 256, 1K, 4K og 16K,
 hvor størrelsen angiver antallet af 2-bit tilstandsmaskiner.
