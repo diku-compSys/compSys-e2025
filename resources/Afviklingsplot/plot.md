@@ -28,6 +28,6 @@ Oversigt
 
  * [Introduktion](intro.md)
  * [Superskalare maskiner](superskalar.md)
- * [Moderne CMOS - Realisme](realisme.md)
+ * [Realistisk (lang) pipeline](realisme.md)
  * [Out-of-order execution](ooo.md)
  * [Øvelser](exercises.md)
