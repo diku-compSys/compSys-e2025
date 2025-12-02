@@ -33,9 +33,9 @@
 | 48   | 24 Nov | Arc   | Finn     | RISCV Maskinsprog                                                             | as above. Also get some familiarity/overview of ch 1,2 and 13 of [RISCV](https://github.com/riscv/riscv-isa-manual/releases/download/20240411/unpriv-isa-asciidoc.pdf) |
 |      | 26 Nov | Arc   | Finn     | Digital logik                                                                 | COD A.1 - A.3, A.5, A7 - A.9, [NandGame](https://nandgame.com/) |
 | 49   | 01 Dec | Arc   | Finn     | En simpel maskine                                                             | COD 4.1 - 4.4 |
-|      | 03 Dec | Arc   | Finn     | Into til Mikroarkitektur: Pipelining og ydeevne                               | COD 4.6 - 4.9 |
-| 50   | 08 Dec | Arc   | Finn     | Avanceret Mikroarkitektur I                                                   | COD 4.11 + [note](https://github.com/diku-compSys/compSys-e2023-pub/blob/main/resources/Afviklingsplot/plot.md) |
-|      | 10 Dec | Arc   | Finn     | Avanceret Mikroarkitektur II                                                  | [note](https://github.com/diku-compSys/compSys-e2023-pub/blob/main/resources/Afviklingsplot/plot.md) |
+|      | 03 Dec | Arc   | Finn     | Into til Mikroarkitektur: Pipelining og ydeevne                               | COD 4.6 - 4.9 + [note](https://github.com/diku-compSys/compSys-e2025/blob/main/resources/Afviklingsplot/plot.md), afsnit: intro,lange pipelines,superskalare |
+| 50   | 08 Dec | Arc   | Finn     | Avanceret Mikroarkitektur I                                                   | COD 4.11 + [note](https://github.com/diku-compSys/compSys-e2025/blob/main/resources/Afviklingsplot/plot.md), afsnit om out-of-order |
+|      | 10 Dec | Arc   | Finn     | Avanceret Mikroarkitektur II                                                  | [note](https://github.com/diku-compSys/compSys-e2025/blob/main/resources/Afviklingsplot/plot.md), afsnit om out-of-order |
 |      |        |       |          | Hand-in A4                                                                    |  |
 | 51   | 15 Dec | Arc   | Finn     | Vector processing. Opsamling. Maskinnær optimering.                           | TBD |
 |      | 17 Dec |       |          | Christmas lecture...     |         |
