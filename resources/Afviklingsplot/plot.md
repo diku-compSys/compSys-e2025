@@ -1,5 +1,7 @@
 # Afviklingsplot og Mikroarkitektur
 
+opdateret 6. december 2025 som forberedelse på større opdatering af figurer
+
 Opdateret 14. januar 2024 med diverse rettelser.
 
 Opdateret 9. december 2023 med rettelse af "Mm" til "Me" for at matche tidligere introduceret notation.
@@ -29,5 +31,5 @@ Oversigt
  * [Introduktion](intro.md)
  * [Superskalare maskiner](superskalar.md)
  * [Realistisk (lang) pipeline](realisme.md)
- * [Out-of-order execution](ooo.md)
+ * [Out-of-order execution](ooo.md) (Ved at blive omskrevet)
  * [Øvelser](exercises.md)

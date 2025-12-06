@@ -1,0 +1,132 @@
+
+### Registeromdøbning 
+
+Vi skelner mellem *logiske* og *fysiske* registre. På maskinsprogsniveau er (mellem)resultater 
+placeret i logiske registre. Det er de registernumre en compiler bruger, når den oversætter
+til assembler. I en simpel mikroarkitektur svarer hvert logisk register til *et*
+*fysisk* register. I en out-of-order maskine er det mere kompliceret. 
+
+En out-of-order maskine skal kunne håndtere mange instruktioner
+som potentielt skriver til samme logiske register og mange instruktioner som læser
+fra samme logiske register men på forskellige tidspunkter. For at kunne holde styr
+på de mange resultater/registre der er i brug samtidigt udføres "registeromdøbning"
+(eng: register renaming). Registeromdøbning er en teknik der sikrer at forskellige 
+instruktioner der skriver til samme logiske register i stedet vil skrive til hver
+deres *fysiske register.* Registeromdøbning sikrer også at læsere af et givet logisk
+register vil læse det korrekte fysiske register.
+
+Nedesntående figur viser hvordan registeromdøbning indgår i mikroarkitekturen. 
+Instruktionerne følger de tykke sorte pile. Registerreferencerne følger de tynde
+pile.
+
+```mermaid
+graph TD
+        Rename(Rename)
+        CFR[Control flow resolution]
+        ROB(Reorder Buffer)
+        Commit(Commit)
+        SpecMap[Register Alias Table]
+        ResMap[CFR RAT]
+        CommitMap[Commit RAT]
+        Freelist[Register Freelist]
+        subgraph Frontend
+        Predict ==> Fetch
+        Fetch ==> Decode
+        Decode ==> Fuse
+        subgraph Renaming
+        Rename -.update.-> SpecMap
+        SpecMap -.lookup.-> Rename
+        end
+        end
+        subgraph Dataflow Execution
+        ROB -.pick.-> ExeArithmetic
+        ROB -.pick.-> ExeLoadStore
+        ROB -.pick.-> CFR
+        end
+        subgraph Backend
+        Commit ==> Done
+        Commit -.update/trigger copy.-> CommitMap
+        end
+        Fuse ==> Rename
+        ROB ==> Commit
+        Rename ==> ROB
+        Commit -.release old.-> Freelist
+        Freelist -.allocate new.-> Rename
+        CommitMap -.copy on exception.-> SpecMap
+        CommitMap -.copy on exception.->ResMap
+        ResMap -.copy on mispredict.-> SpecMap
+        CFR -.trigger copy.-> ResMap
+        ROB -.inorder update.-> ResMap
+```
+
+Registeromdøbning udføres ved hjælp af en omdøbningstabel, "Register Alias Table" eller "RAT". 
+Denne tabel associerer hvert logisk registernummer med et fysisk registernummer. 
+Instruktionens logiske kilde-registre slås op i tabellen og de tilsvarende fysiske registernumre følger
+med instruktionen videre frem i maskinen. Ved omdøbning allokeres et fysisk destinationsregister
+fra en friliste og omdøbningstabellen opdateres så den afspejler den nye binding fra
+logisk til fysisk registernummer.
+
+En typisk implementation bruger en cirkulær buffer til at holde såvel frilisten som
+listen over allokerede destinationsregistre. En "tæller" indikerer allokeringspunkt
+og allokering af fysiske registre sker ved at justere tælleren.
+
+Instruktionerne slutter deres liv i "bagenden" af mikroarkitekturen. Her findes endnu
+en omdøbningstabel, "Commit RAT", som holder afbildningen fra logisk til fysisk register
+for den ældste instruktion. Endnu en tæller holder rede på hvor den ældste instruktion
+befinder sig i bufferen. Den ældste instruktion *fuldføres* (eng: commits, retires)
+ved at dens tidligere fysiske destinations registernummer læses fra "Commit RAT"
+og indsættes i frilisten. Derpå opdateres "Commit RAT" til at udpege det nye fysiske
+destinationsregister for instruktionen.
+
+Omdøbning tager typisk et eller to trin, afhængigt af hvor mange instruktioner der
+skal behandles samtidigt. Vi antager to trin som vi markerer med "Al" (allocate) og
+"Rn" (rename) i vores "flow" beskrivelse.
+
+### Registeromdøbning og exceptions
+
+Hvis en instruktion fejler (f.eks. tilgår reserveret lager, dividerer med nul) skal
+maskinen reagere ved at kalde en "exception handler." Moderne
+maskiner understøtter *præcise* exceptions: Herved forstås at en exception ses som
+associeret med *en* bestemt fejlende instruktion. Alle tidligere instruktioner skal 
+fremstå som værende udført og alle efterfølgende som ikke udført. 
+
+I en simpel pipeline modsvares instruktionernes rækkefølge i programudførelsen
+af deres placering i pipelinen. Derfor kan præcise exceptions sikres ved at
+have Wb trinnet *efter* det trin hvor fejl detekteres. I en out-of-order maskine
+med hundredevis af instruktioner i forskellige stadier af udførelse skal der andre
+boller på suppen.
+
+Registeromdøbning er designet til at understøtte præcise "exceptions" som følger:
+Hvis en instruktion fejler, så markeres den blot som fejlet men iøvrigt fortsætter
+udførelsen. Instruktionshentning stopper dog omgående og afventer. Når den fejlende
+instruktion er blevet den ældste instruktion og når til commit-trinnet så aborteres alle andre
+instruktioner og  omdøbningstabellen i forenden af pipelinen (RAT) geninitialiseres fra omdøbningstabellen i commit (Commit RAT). 
+Endeligt returneres de fysiske destinationsregistre
+for de aborterede instruktioner til frilisten. Som nævnt tidligere implementeres
+friliste og listen over allokerede fysiske registre med en cirkulær buffer og frigivelse
+kan gøres ved at sætte tælleren for allokering så den svarer til tælleren for
+frigivelse. 
+
+### Registeromdøbning og fejl-Forudsigelser
+
+Håndtering af fejl-forudsigelser minder om håndtering af exceptions, men der er andre
+krav til ydeevnen. Fejl-forudsigelser forekommer langt hyppigere og skal derfor håndteres
+hurtigere. Det er ikke godt nok at vente til et fejl-forudsagt hop bliver den ældste
+instruktion og når commit-trinnet.
+
+For at kunne reagere hurtigere implementeres en mekanisme som fungerer analogt til
+commit, men kun begrænses af de betingede instruktioner, der endnu ikke er blevet afgjort.
+(Det vil sige: den ignorerer fejlende instruktioner)
+
+Mekanismen scanner instruktionerne og de allokerede fysiske destinationsregistre i 
+programrækkefølge og opdaterer endnu en omdøbningstabel (CFR RAT). Denne RAT repræsenterer
+maskinens tilstand ved den nyeste (i programforløbet) endnu ikke afgjorte betingelse. 
+Hvis denne nyeste ikke afgjorte betingelse viser sig at være fejlforudsagt, så kopieres
+CFR RAT til RAT, yngre instruktioner aborteres og deres allokerede destinationsregistre
+returneres til frilisten. Samtidigt omdirigeres instruktionshentning til den korrekte
+adresse. Fordi det tager tid at fylde forenden af mikroarkitekturen med nye instruktioner
+kan omkostningen ved at opdatere RATs, frilister osv skjules. Fra et performance-perspektiv gælder
+stadig at første fase af instruktions-hentning kan ske i maskincyklen umiddelbart
+efter et betinget hop afgøres som fejlforudsagt.
+
+
