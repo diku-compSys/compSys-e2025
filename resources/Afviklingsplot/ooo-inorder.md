@@ -9,6 +9,6 @@ angives i programmet. Følgende elementer indgår:
  * [Fuldførelse](ooo-completion.md)
 
 Mellem registeromdøbning og fuldførelse håndteres instruktionerne derimod i en
-rækkefølge bestemt ud fra deres indbyrdes afhængigheder [dataflow](ooo-dataflow.md)
+rækkefølge bestemt ud fra deres indbyrdes afhængigheder, som beskrevet her [dataflow](ooo-dataflow.md)
 
 

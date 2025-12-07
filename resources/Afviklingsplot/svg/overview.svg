@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: fig2dev Version 3.2.9 -->
+<!-- CreationDate: 2025-01-05 14:10:57 -->
+<!-- Magnification: 1.05 -->
+<svg	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="503pt" height="351pt"
+	viewBox="708 303 7972 5559">
+<g fill="none">
+<!-- Line -->
+<rect x="810" y="315" width="3240" height="810"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<defs>
+<clipPath id="cp0">
+	<path clip-rule="evenodd" d="M 708,303 H 8680 V 5862 H 708 z
+		M 2370,1574 2310,1574 2333,1717 2347,1717z"/>
+</clipPath>
+</defs>
+<polyline points=" 2340,1125 2340,1710" clip-path="url(#cp0)"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Forward arrow to point 2340,1710 -->
+<polygon points=" 2310,1574 2340,1694 2370,1574 2310,1574"
+	stroke="#000000" stroke-width="8px" stroke-miterlimit="8" fill="#000000"/>
+<!-- Line -->
+<rect x="765" y="1665" width="3285" height="945"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<defs>
+<clipPath id="cp1">
+	<path clip-rule="evenodd" d="M 708,303 H 8680 V 5862 H 708 z
+		M 2370,3014 2310,3014 2333,3157 2347,3157z"/>
+</clipPath>
+</defs>
+<polyline points=" 2340,2610 2340,3150" clip-path="url(#cp1)"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Forward arrow to point 2340,3150 -->
+<polygon points=" 2310,3014 2340,3134 2370,3014 2310,3014"
+	stroke="#000000" stroke-width="8px" stroke-miterlimit="8" fill="#000000"/>
+<!-- Line -->
+<rect x="765" y="3150" width="3285" height="1350"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<defs>
+<clipPath id="cp2">
+	<path clip-rule="evenodd" d="M 708,303 H 8680 V 5862 H 708 z
+		M 2325,5039 2265,5039 2288,5182 2302,5182z"/>
+</clipPath>
+</defs>
+<polyline points=" 2295,4500 2295,5175" clip-path="url(#cp2)"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Forward arrow to point 2295,5175 -->
+<polygon points=" 2265,5039 2295,5159 2325,5039 2265,5039"
+	stroke="#000000" stroke-width="8px" stroke-miterlimit="8" fill="#000000"/>
+<!-- Line -->
+<rect x="720" y="5175" width="3330" height="675"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<defs>
+<clipPath id="cp3">
+	<path clip-rule="evenodd" d="M 708,303 H 8680 V 5862 H 708 z
+		M 4270,786 4198,686 4309,740 4184,665 4175,676z"/>
+</clipPath>
+</defs>
+<polyline points=" 6480,2610 4185,675" clip-path="url(#cp3)"
+	stroke="#000000" stroke-width="8px" stroke-dasharray="10 30"/>
+<!-- Forward arrow to point 4185,675 -->
+<polyline points=" 4270,786 4198,686 4309,740"
+	stroke="#000000" stroke-width="8px" stroke-miterlimit="8"/>
+<!-- Line -->
+<defs>
+<clipPath id="cp4">
+	<path clip-rule="evenodd" d="M 708,303 H 8680 V 5862 H 708 z
+		M 4312,2173 4201,2118 4325,2114 4180,2107 4177,2120z"/>
+</clipPath>
+</defs>
+<polyline points=" 6525,2610 4185,2115" clip-path="url(#cp4)"
+	stroke="#000000" stroke-width="8px" stroke-dasharray="10 30"/>
+<!-- Forward arrow to point 4185,2115 -->
+<polyline points=" 4312,2173 4201,2118 4325,2114"
+	stroke="#000000" stroke-width="8px" stroke-miterlimit="8"/>
+<!-- Line -->
+<defs>
+<clipPath id="cp5">
+	<path clip-rule="evenodd" d="M 708,303 H 8680 V 5862 H 708 z
+		M 4454,3830 4334,3862 4425,3778 4311,3867 4317,3879z"/>
+</clipPath>
+</defs>
+<polyline points=" 6525,2655 4320,3870" clip-path="url(#cp5)"
+	stroke="#000000" stroke-width="8px" stroke-dasharray="10 30"/>
+<!-- Forward arrow to point 4320,3870 -->
+<polyline points=" 4454,3830 4334,3862 4425,3778"
+	stroke="#000000" stroke-width="8px" stroke-miterlimit="8"/>
+<!-- Line -->
+<defs>
+<clipPath id="cp6">
+	<path clip-rule="evenodd" d="M 708,303 H 8680 V 5862 H 708 z
+		M 4413,5512 4292,5489 4409,5452 4268,5484 4269,5497z"/>
+</clipPath>
+</defs>
+<polyline points=" 6480,5355 4275,5490" clip-path="url(#cp6)"
+	stroke="#000000" stroke-width="8px" stroke-dasharray="10 30"/>
+<!-- Forward arrow to point 4275,5490 -->
+<polyline points=" 4413,5512 4292,5489 4409,5452"
+	stroke="#000000" stroke-width="8px" stroke-miterlimit="8"/>
+<!-- Text -->
+<text xml:space="preserve" x="1080" y="630" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">Hentning og</text>
+<!-- Text -->
+<text xml:space="preserve" x="1080" y="847" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">Forudsigelse</text>
+<!-- Text -->
+<text xml:space="preserve" x="1035" y="2025" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">Omskrivning fra RISCV</text>
+<!-- Text -->
+<text xml:space="preserve" x="1035" y="2295" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">til dataflow operationer  (uops)</text>
+<!-- Text -->
+<text xml:space="preserve" x="990" y="3600" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">Dataflow maskine</text>
+<!-- Text -->
+<text xml:space="preserve" x="990" y="4050" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">Operationer udføres i</text>
+<!-- Text -->
+<text xml:space="preserve" x="990" y="4275" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">dataflow rækkefølge</text>
+<!-- Text -->
+<text xml:space="preserve" x="945" y="5535" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">Fuldførelse (i programrækkefølge)</text>
+<!-- Text -->
+<text xml:space="preserve" x="6660" y="5400" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">Resultater bliver synlige</text>
+<!-- Text -->
+<text xml:space="preserve" x="6705" y="2700" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">Arbejder "spekulativt"</text>
+<!-- Text -->
+<text xml:space="preserve" x="6750" y="2925" fill="#000000" font-family="Times" font-style="normal" font-weight="normal" font-size="144" text-anchor="start">og "hemmeligt"</text>
+</g>
+</svg>

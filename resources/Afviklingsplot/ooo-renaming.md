@@ -15,51 +15,13 @@ instruktioner der skriver til samme logiske register i stedet vil skrive til hve
 deres *fysiske register.* Registeromdøbning sikrer også at læsere af et givet logisk
 register vil læse det korrekte fysiske register.
 
-Nedesntående figur viser hvordan registeromdøbning indgår i mikroarkitekturen. 
+Nedenstående figur viser hvordan registeromdøbning indgår i mikroarkitekturen. 
 Instruktionerne følger de tykke sorte pile. Registerreferencerne følger de tynde
 pile.
 
-```mermaid
-graph TD
-        Rename(Rename)
-        CFR[Control flow resolution]
-        ROB(Reorder Buffer)
-        Commit(Commit)
-        SpecMap[Register Alias Table]
-        ResMap[CFR RAT]
-        CommitMap[Commit RAT]
-        Freelist[Register Freelist]
-        subgraph Frontend
-        Predict ==> Fetch
-        Fetch ==> Decode
-        Decode ==> Fuse
-        subgraph Renaming
-        Rename -.update.-> SpecMap
-        SpecMap -.lookup.-> Rename
-        end
-        end
-        subgraph Dataflow Execution
-        ROB -.pick.-> ExeArithmetic
-        ROB -.pick.-> ExeLoadStore
-        ROB -.pick.-> CFR
-        end
-        subgraph Backend
-        Commit ==> Done
-        Commit -.update/trigger copy.-> CommitMap
-        end
-        Fuse ==> Rename
-        ROB ==> Commit
-        Rename ==> ROB
-        Commit -.release old.-> Freelist
-        Freelist -.allocate new.-> Rename
-        CommitMap -.copy on exception.-> SpecMap
-        CommitMap -.copy on exception.->ResMap
-        ResMap -.copy on mispredict.-> SpecMap
-        CFR -.trigger copy.-> ResMap
-        ROB -.inorder update.-> ResMap
-```
+![renaming](svg/renamer.svg)
 
-Registeromdøbning udføres ved hjælp af en omdøbningstabel, "Register Alias Table" eller "RAT". 
+Registeromdøbning udføres ved hjælp af en omdøbningstabel, aka. "Register Alias Table" eller "RAT". 
 Denne tabel associerer hvert logisk registernummer med et fysisk registernummer. 
 Instruktionens logiske kilde-registre slås op i tabellen og de tilsvarende fysiske registernumre følger
 med instruktionen videre frem i maskinen. Ved omdøbning allokeres et fysisk destinationsregister
@@ -72,7 +34,7 @@ og allokering af fysiske registre sker ved at justere tælleren.
 
 Instruktionerne slutter deres liv i "bagenden" af mikroarkitekturen. Her findes endnu
 en omdøbningstabel, "Commit RAT", som holder afbildningen fra logisk til fysisk register
-for den ældste instruktion. Endnu en tæller holder rede på hvor den ældste instruktion
+for den senest fuldførte instruktion. Endnu en tæller holder rede på hvor den ældste instruktion
 befinder sig i bufferen. Den ældste instruktion *fuldføres* (eng: commits, retires)
 ved at dens tidligere fysiske destinations registernummer læses fra "Commit RAT"
 og indsættes i frilisten. Derpå opdateres "Commit RAT" til at udpege det nye fysiske
@@ -107,6 +69,10 @@ friliste og listen over allokerede fysiske registre med en cirkulær buffer og f
 kan gøres ved at sætte tælleren for allokering så den svarer til tælleren for
 frigivelse. 
 
+Figuren nedenfor viser systemet med flere detaljer.
+
+![renaming-2](svg/overview2.svg)
+
 ### Registeromdøbning og fejl-Forudsigelser
 
 Håndtering af fejl-forudsigelser minder om håndtering af exceptions, men der er andre
@@ -114,19 +80,21 @@ krav til ydeevnen. Fejl-forudsigelser forekommer langt hyppigere og skal derfor 
 hurtigere. Det er ikke godt nok at vente til et fejl-forudsagt hop bliver den ældste
 instruktion og når commit-trinnet.
 
-For at kunne reagere hurtigere implementeres en mekanisme som fungerer analogt til
-commit, men kun begrænses af de betingede instruktioner, der endnu ikke er blevet afgjort.
-(Det vil sige: den ignorerer fejlende instruktioner)
+Derfor udbygges maskinen med en "snapshot" mekanisme. Man gemmer simpelthen hele omdøbnings-tabellen
+med korte mellemrum, så man hurtigt kan retablere tilstanden efter enhver fejlforudsigelse.
 
-Mekanismen scanner instruktionerne og de allokerede fysiske destinationsregistre i 
-programrækkefølge og opdaterer endnu en omdøbningstabel (CFR RAT). Denne RAT repræsenterer
-maskinens tilstand ved den nyeste (i programforløbet) endnu ikke afgjorte betingelse. 
-Hvis denne nyeste ikke afgjorte betingelse viser sig at være fejlforudsagt, så kopieres
-CFR RAT til RAT, yngre instruktioner aborteres og deres allokerede destinationsregistre
-returneres til frilisten. Samtidigt omdirigeres instruktionshentning til den korrekte
-adresse. Fordi det tager tid at fylde forenden af mikroarkitekturen med nye instruktioner
-kan omkostningen ved at opdatere RATs, frilister osv skjules. Fra et performance-perspektiv gælder
-stadig at første fase af instruktions-hentning kan ske i maskincyklen umiddelbart
-efter et betinget hop afgøres som fejlforudsagt.
+Her ses systemet udbygget med en kø af snapshots:
+
+![renaming-3](svg/overview3.svg)
+
+Når dataflow-delen af maskinen signalerer at en forudsigelse bliver afgjort, så reagerer
+systemt omgående ved samtidigt at:
+
+ * Opdatere hopforudsigere m.v.
+ * Stoppe og derpå fjerne spekulativt udførte instruktioner efter det fejlforudsagte hop
+ * Fjerne elementer i STORE-køen for instruktioner efter det fejlforudsagte hop
+ * Omdirigere instruktionshentning og fylde pipelinen med de korrekte instruktioner
+ * Retablere RAT'en i omdøbnings-trinnet svarende til tilstanded ved det fejlforudsagte hop.
+
 
 

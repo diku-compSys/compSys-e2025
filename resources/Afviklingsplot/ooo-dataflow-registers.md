@@ -39,7 +39,7 @@ For hop og aritmetiske instruktioner (excl mul) ender vi med følgende "flow" be
 
 ~~~
 ALU-op: Fa Fb Fc De Fu Al Rn Qu pk rd ex wb Ca Cb
-branch: Fa Fb Fc De Fu Al Rn Qu pk rd ex Ca Cb
+branch: Fa Fb Fc De Fu Al Rn Qu pk rd ex wb Ca Cb
 
 inorder: Fa,Fb,Fc,De,Fu,Al,Rn,Qu,Ca,Cb
 outoforder: pk,rd,ex,wb
@@ -65,8 +65,8 @@ Fa Fb Fc De Fu Al Rn Qu -- -- -- pk rd ex wb Ca Cb
 
 Vi har nu beskrevet tilstrækkeligt meget af mikroarkitekturen til at vi kan bestemme
 hvad et fejlforudsagt hop koster (i vores maskine). "Fa" for instruktionen efter hoppet 
-kan tidligst ligge i cyklen efter "ex" for det fejlforudsagte hop. Det giver en 
-"branch mispredict penalty" på 10 maskincykler.
+kan tidligst ligge i cyklen efter "wb" for det fejlforudsagte hop. Det giver en 
+"branch mispredict penalty" på 11 maskincykler.
 
 Typiske tal for moderne mikroarkitekturer er 10-15 maskincykler.
 

@@ -38,6 +38,8 @@ i programrækkefølge.
 
 Figuren nedenfor illustrerer en moderne out-of-order mikroarkitektur
 
-![image ooo-mikroarkitektur](la-machine.svg)
+![image ooo-koncept](svg/overview.svg)
 
+En mere detaljeret udgave:
 
+![image ooo-mikroarkitektur](svg/la-machine.svg)

@@ -23,6 +23,7 @@ I det følgende vil vi antage at vi kan forudsige en hop/kald/retur pr maskin-cy
 og udelade selve forudsigelsen fra vores "flow" beskrivelse, der derfor stadig
 vil starte med de tre trin Fa, Fb og Fc.
 
+
 ### Fusionering
 
 I de fleste maskinsprog er der bestemte instruktionssekvenser som med fordel kan omskrives
