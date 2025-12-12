@@ -1,5 +1,5 @@
 
-### Load instruktioner
+## Load instruktioner
 
 Håndtering af lagerreferencer er den mest komplicerede del af en moderne mikroarkitektur.
 Formodentlig cirka ligeså omfattende som alle de øvrige elementer til sammen. Så "brace for impact!"
@@ -21,12 +21,16 @@ i L2 cache kunne give følgende afviklingsplot:
 load: Fa Fb Fc De Fu Al Rn Qu pk rd ag ma mb mc -- -- -- -- -- -- -- -- -- wb Ca Cb
 ~~~
 
-### Store instruktioner
+## Store instruktioner
 
 Skrivning til lageret må ikke foregå spekulativt. En store instruktion
 kan ikke opdatere lageret før den har nået "commit" og vi ved med sikkerhed at den
 virkeligt skal fuldføres. Ergo må skrivninger holdes tilbage i en kø, analogt til
 køen af allokerede destinationsregistre. Denne kø kaldes en store-kø.
+
+Figuren her viser placeringen af Store-køen i den overordnede mikroarkitektur:
+
+![verview](svg/overview2.svg)
 
 Omvendt: selvom store instruktioner ikke må opdatere lageret, så skal alle
 efterfølgende load instruktioner fra samme instruktionsstrøm *se* opdateringerne.
@@ -65,7 +69,13 @@ Opslaget foretages for at trigge eventuelle TLB miss og cache miss. Opdatering a
 cachen sker først senere når store instruktionen bliver den ældste i store-køen og når
 til commmit-trinnet. Vi viser ikke denne sene skrivning til cachen i afviklingsplottet.
 
-### Store til Load forwarding
+Figuren herunder viser flere detaljer i koblingen mellem Store-kø og de to out-of-order
+pipelines som producerer hhv adresser og data til en skrivning til lageret.
+
+![dataflow-del](svg/dataflow-big.svg)
+
+
+## Store til Load forwarding
 
 Betragt denne instruktionssekvens
 

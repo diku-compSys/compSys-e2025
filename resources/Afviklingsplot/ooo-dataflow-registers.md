@@ -19,6 +19,11 @@ latenstid. En single-cycle ALU operation har en latenstid på 1, mens en load in
 I nogle maskiner er der mange små schedulere, som hver udvælger en instruktion, i andre
 er der færre schedulere som hver især kan udvælge flere instruktioner.
 
+Her ses en mindre dataflow maskine med fire pipelines. Udvælgelse af instruktioner sker
+øverst i hver af de fire pipelines:
+
+![dataflow-del](svg/dataflow-big.svg)
+
 Bemærk at da schedulering foretages flere pipeline trin før udførelse, så er den af
 natur spekulativ og baseret på antagelser om latenstider og vil fejle hvis en instruktion 
 har en anden latenstid end antaget, for eksempel ved et cache-miss. Vi vil senere 
