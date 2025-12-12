@@ -13,6 +13,11 @@ angives i programmet. Følgende elementer indgår:
  * [Registeromdøbning](ooo-renaming.md)
  * [Fuldførelse](ooo-completion.md)
 
+Denne figur giver et overblik over den komplette mikroarkitektur.
+
+![verview](svg/overview2.svg)
+
+
 Mellem registeromdøbning og fuldførelse håndteres instruktionerne derimod i en
 rækkefølge bestemt ud fra deres indbyrdes afhængigheder, se nedenfor
 
