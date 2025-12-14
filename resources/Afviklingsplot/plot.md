@@ -1,5 +1,7 @@
 # Afviklingsplot og Mikroarkitektur
 
+opdateret 14. december 2025 med bedre figurer
+
 opdateret 6. december 2025 som forberedelse på større opdatering af figurer
 
 Opdateret 14. januar 2024 med diverse rettelser.
