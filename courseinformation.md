@@ -225,14 +225,14 @@ There are 6 assignment in total during the course with deadline roughly every tw
 | A2: Concurrency                               | Sunday Week 43 @ 16:00    | OS    |       4 points |
 | A3: Client network distribution and security  | Sunday Week 47 @ 16:00    | CN    |       6 points |
 | A4: Architecture.                             | Sunday Week 50 @ 16:00    | Arc   |       6 points |
-| A5: Theoretical catch up                      | Tuesday Week 02 @ 20:00 | None  |       2 points |
+| A5: Theoretical catch up                      | Wednesday Week 02 @ 20:00 | None  |       2 points |
 
-Assignments are made to be solved in groups of preferably three students, but groups of two active students will also do. We strongly encourage not to work alone. Groups cannot be larger than three students. Each group must make their own solutions and must share implementations and report with other. You are allowed to discuss material and ideas. All assignment handins should include the standard KU Generative AI declaration [KU Generative AI declaration](https://kunet.ku.dk/work-areas/teaching/digital-learning/chatgpt-and-ai/new-rules-and-principles-from-september-2025/template-for-declaration/Pages/default.aspx).
+Assignments are made to be solved in groups of preferably three students, but groups of two active students will also do. We strongly encourage not to work alone. Groups cannot be larger than three students. Each group must make their own solutions and must share implementations and report with other. You are allowed to discuss material and ideas. All assignment hand-ins should include the standard KU Generative AI declaration [KU Generative AI declaration](https://kunet.ku.dk/work-areas/teaching/digital-learning/chatgpt-and-ai/new-rules-and-principles-from-september-2025/template-for-declaration/Pages/default.aspx).
 
 The final assignment will only be theoretical.
 
 ### Feedback
-Feedback to assignments will be given by TAs on the course; we try to match with the TA of the exercise class. Feedback will focus on what could be approved in the assignment relating to both technical implementations, and report structure and material. The feedback may thus be useful for later assignment. The feedbeck will not be complete, so it can be useful also to talk with your TA at the exercises. Feedback will not give a direct justification of the evaluation in number of points.
+Feedback to assignments will be given by TAs on the course; we try to match with the TA of the exercise class. Feedback will focus on what could be approved in the assignment relating to both technical implementations, and report structure and material. The feedback may thus be useful for later assignment. The feedback will not be complete, so it can be useful also to talk with your TA at the exercises. Feedback will not give a direct justification of the evaluation in number of points.
 
 Correction of submissions will be available after about two weeks.
 
