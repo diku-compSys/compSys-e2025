@@ -41,12 +41,14 @@
 |      | 17 Dec |       |          | Christmas lecture.                                                            |         |
 | 52   |        |       |          | Christmas vacation - No lectures                                              |         |
 | 1    |        |       |          | Christmas vacation - No lectures                                              |         |
-| 2    | 06 Jan | Recap | TAs      | 13:15; Architecture recap, DIKU, Li.UP1                                 |         |
-|      |        | CN    | Michael  | 15:15; Security Across the Network, DIKU St.UP1                         | KR 8.1 - 8.7 |
-|      | 08 Jan | CN    | Michael  | 09:15; layer, data plane                                  | KR 4.1 - 4.2.4, 4.3 (Optional read - [Design Philosophy of DARPA Internet Protocols](http://www.cs.princeton.edu/courses/archive/spr14/cos461/papers/clark88.pdf)) |
-|      |        | CN    | Michael  | 10:30; Network layer, control plane                         | KR 5.1 - 5.3, KR 6.1 - 6.4.3, KR 8.5 - 8.6 |
-|      |        | Recap | TAs      | 13:15; Operation System recap                              |         |
-|      |        | Recap | TAs      | 15:15; Computer Network                                              |         |
+| 2    | 06 Jan |       |          |                                                                               |         |
+|      | 13:15  | Recap | TAs      | Architecture recap, DIKU, Li.UP1                                 |         |
+|      | 15:15  | CN    | Michael  | Security Across the Network, DIKU St.UP1                         | KR 8.1 - 8.7 |
+|      | 08 Jan |       |          |                                                                               |         |
+|      | 09:15  | CN    | Michael  | layer, data plane                                  | KR 4.1 - 4.2.4, 4.3 (Optional read - [Design Philosophy of DARPA Internet Protocols](http://www.cs.princeton.edu/courses/archive/spr14/cos461/papers/clark88.pdf)) |
+|      | 10:30  | CN    | Michael  | Network layer, control plane                         | KR 5.1 - 5.3, KR 6.1 - 6.4.3, KR 8.5 - 8.6 |
+|      | 13:15  | Recap | TAs      | Operation System recap                              |         |
+|      | 15:15  | Recap | TAs      | Computer Network                                              |         |
 | 4    | 19 Jan |       | Lectures | Exam question session, recap and evaluation                          |         |
 |      | 21 Jan |       | Everyone | CompSys Exam                                                                  |         |
 
