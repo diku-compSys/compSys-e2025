@@ -1,0 +1,18 @@
+Links to usefull material for Assembler Programming part of exam.
+
+Download Before Exam:
+- Quick RISC-V References (downlad bebfore exam):
+  https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/notebooks/RISCV/RISCV_CARD.pdf
+
+- The RISC-V Instruction Set Manual Volume I (download before exam):
+  https://github.com/riscv/riscv-isa-manual/releases/download/20240411/unpriv-isa-asciidoc.pdf
+
+
+For Practising Translating RISC-V to C. 
+- Tutorials on C to RISC-V:
+  https://www.youtube.com/playlist?list=PLeFoe3FAv19dfNDjiUeJ6sD91vzPRqbch
+
+- C to RISC-V / RISC-V to C 
+  https://godbolt.org/z/eh69GT8qW
+
+
