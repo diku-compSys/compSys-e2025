@@ -49,7 +49,7 @@
 |      | 10:30  | CN    | Michael  | Network layer, control plane                         | KR 5.1 - 5.3, KR 6.1 - 6.4.3, KR 8.5 - 8.6 |
 |      | 13:15  | Recap | TAs      | Operation System recap                              |         |
 |      | 15:15  | Recap | TAs      | Computer Network                                              |         |
-| 4    | 19 Jan |       | Lectures | Exam question session, recap and evaluation                          |         |
+| 4    | 19 Jan |       | Lectures | (15:00, St. UP1) FAQ, Exam question session and evaluation                          |         |
 |      | 21 Jan |       | Everyone | CompSys Exam                                                                  |         |
 
 
